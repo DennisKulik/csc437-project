@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  margin: 0;
   font-family: var(--font-family-base);
   line-height: var(--line-height-base);
   background-color: var(--color-background-page);
@@ -10,11 +11,10 @@ html, body {
 header {
   background-color: var(--color-background-header);
   color: var(--color-text-inverted);
-  padding: var(--spacing-large) var(--spacing-xlarge);
+  padding: var(--spacing-small);
   text-align: center;
   font-family: var(--font-family-display);
   font-size: var(--font-size-heading);
-  font-weight: 600;
 }
 
 /* Headings */

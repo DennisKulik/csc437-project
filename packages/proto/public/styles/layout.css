@@ -1,0 +1,43 @@
+header {
+  display: flex;              
+  justify-content: space-between; 
+  align-items: center;
+  margin: 0;
+  padding: var(--spacing-large) var(--spacing-xlarge);
+  background-color: var(--color-background-header);
+  color: var(--color-text-inverted);
+}
+
+.header-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-center .app-name {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-heading);
+}
+
+.header-center .page-name {
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
+  color: var(--color-text-inverted);
+}
+
+.header-nav a {
+  margin-left: var(--spacing-medium);
+  color: var(--color-text-inverted);
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-large);
+  padding: var(--spacing-large);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
