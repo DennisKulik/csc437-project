@@ -1,0 +1,50 @@
+/* page.css */
+
+/* Reset & base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-family-base);
+  background-color: var(--color-background-page);
+  color: var(--color-text);
+  line-height: var(--line-height-base);
+}
+
+/* Header */
+header {
+  background-color: var(--color-background-header);
+  color: var(--color-text-inverted);
+  padding: var(--spacing-large) var(--spacing-xlarge);
+  text-align: center;
+  font-size: var(--font-size-heading);
+  font-weight: 600;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: var(--spacing-small);
+  color: var(--color-heading);
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: var(--spacing-small);
+  color: var(--color-text-secondary);
+}
+
+/* Links */
+a { 
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
