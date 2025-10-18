@@ -1,17 +1,9 @@
-/* page.css */
-
-/* Reset & base styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 html, body {
   height: 100%;
   font-family: var(--font-family-base);
+  line-height: var(--line-height-base);
   background-color: var(--color-background-page);
   color: var(--color-text);
-  line-height: var(--line-height-base);
 }
 
 /* Header */
@@ -20,15 +12,17 @@ header {
   color: var(--color-text-inverted);
   padding: var(--spacing-large) var(--spacing-xlarge);
   text-align: center;
+  font-family: var(--font-family-display);
   font-size: var(--font-size-heading);
   font-weight: 600;
 }
 
 /* Headings */
 h1, h2, h3 {
-  font-weight: 600;
-  margin-bottom: var(--spacing-small);
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-bold);
   color: var(--color-heading);
+  margin-bottom: var(--spacing-small);
 }
 
 /* Paragraphs */
@@ -47,4 +41,13 @@ a:hover {
   color: var(--color-accent-hover);
   text-decoration: underline;
 }
+
+svg.icon {
+  display: inline;
+  height: 2em;
+  width: 2em;
+  vertical-align: top;
+  fill: currentColor;
+}
+
 
