@@ -34,10 +34,11 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-column: 5 / span 4;
   gap: var(--spacing-small);
   padding: var(--spacing-medium);
   max-width: 800px;
+  min-width: 200px;
   margin: 0 auto;
 }
 

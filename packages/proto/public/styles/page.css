@@ -1,4 +1,6 @@
 html, body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   height: 100%;
   margin: 0;
   font-family: var(--font-family-base);
