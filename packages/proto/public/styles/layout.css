@@ -1,8 +1,16 @@
-header {
-  display: flex;              
-  justify-content: space-between; 
-  align-items: center;
+body {
   margin: 0;
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-base);
+  background-color: var(--color-background-page);
+  color: var(--color-text);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: var(--spacing-large) var(--spacing-xlarge);
   background-color: var(--color-background-header);
   color: var(--color-text-inverted);
@@ -21,7 +29,6 @@ header {
 
 .header-center .page-name {
   font-family: var(--font-family-base);
-  font-weight: var(--font-weight-regular);
   font-size: var(--font-size-base);
   color: var(--color-text-inverted);
 }
@@ -31,14 +38,15 @@ header {
   color: var(--color-text-inverted);
   text-decoration: none;
 }
+.header-nav a:hover {
+  text-decoration: underline;
+}
 
 main {
   display: grid;
-  grid-column: 5 / span 4;
   gap: var(--spacing-small);
   padding: var(--spacing-medium);
   max-width: 800px;
-  min-width: 200px;
   margin: 0 auto;
 }
 
