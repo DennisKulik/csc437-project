@@ -12,16 +12,28 @@
     <link rel="stylesheet" href="/styles/page.css">
     <link rel="stylesheet" href="/styles/reset.css"/>
 </head>
-<body>
+<body class="page">
     <header>
-    <div class="header-center">
-        <h1 class="app-name">Baked Goods Bonanza</h1>
-        <span class="page-name">Chocolate Croissant</span>
-    </div>
-    <nav class="header-nav">
-        <a href="index.html">Home</a>
-        <a href="categories.html">Categories</a>
-    </nav>
+        <div class="header-left">
+            <div class="top-row">
+                <svg class="logo">
+                    <use href="/icons/bakery.svg#icon-logo"/>
+                </svg>
+                <h1 class="app-name">Baked Goods Bonanza</h1>
+            </div>
+            <span class="page-name">Home</span>
+        </div>
+        <div class="header-right">
+            <nav class="header-nav">
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="#">Profile</a>
+            </nav>
+            <div class="header-user">
+                <img src="/assets/images/default_profile.png" alt="Avatar" class="avatar">
+                <span class="username">Username</span>
+            </div>
+        </div>
     </header>
     <main>
         <h1>Chocolate Croissant</h1>

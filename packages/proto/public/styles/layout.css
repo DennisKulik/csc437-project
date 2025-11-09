@@ -1,3 +1,4 @@
+/* Base Page Layout */
 body {
   margin: 0;
   font-family: var(--font-family-base);
@@ -6,31 +7,47 @@ body {
   color: var(--color-text);
 }
 
+.page {
+  display: grid;
+  grid-template-columns: [start] repeat(12, 1fr) [end];  
+}
+
 /* Header */
 header {
+  grid-column: start / end;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-large) var(--spacing-xlarge);
+  padding: var(--spacing-medium) var(--spacing-xlarge);
   background-color: var(--color-background-header);
   color: var(--color-text-inverted);
 }
 
-.header-center {
+.header-left {
   display: flex;
   flex-direction: column;
 }
 
-.header-center .app-name {
-  font-family: var(--font-family-display);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-heading);
+.header-right {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-xlarge);
 }
 
-.header-center .page-name {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
-  color: var(--color-text-inverted);
+.header-right .header-user {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-medium);
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+}
+
+.top-row svg {
+  width: 4em;
+  height: auto;
 }
 
 .header-nav a {
@@ -42,11 +59,11 @@ header {
   text-decoration: underline;
 }
 
+/* Main */
 main {
-  display: grid;
-  gap: var(--spacing-small);
+  grid-column: 2 / 10;
   padding: var(--spacing-medium);
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto; 
 }
 

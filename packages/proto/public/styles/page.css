@@ -23,6 +23,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Visual Elements */
 svg.icon {
   display: inline;
   height: 2em;
@@ -31,17 +32,25 @@ svg.icon {
   fill: currentColor;
 }
 
-/* Header text styles */
-.header-center .app-name {
+svg.logo {
+  display: inline;
+  height: 3em;
+  width: 3em;
+  vertical-align: top;
+  fill: currentColor;
+}
+
+img.avatar {
+  display: inline;
+  height: 3em;
+  width: 3em;
+  vertical-align: top;
+  border-radius: 50%;
+}
+
+/* Component Specific */
+.header-left .app-name {
   font-family: var(--font-family-display);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-heading);
+  font-size: var(--font-size-logo);
 }
-
-.header-center .page-name {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-base);
-  color: var(--color-text-inverted);
-}
-
-
